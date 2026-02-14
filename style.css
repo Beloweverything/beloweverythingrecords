@@ -73,13 +73,7 @@ main{
   display:block;
   margin: 0 auto 32px;
 }
-.contact-art{
-  width: min(260px, 60vw);
-  height: auto;
-  display: block;
-  margin: 20px auto 24px;
-  opacity: 0.9;
-}
+
 .rule{
   width: min(560px, 88%);
   height: 1px;
