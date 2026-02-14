@@ -68,11 +68,10 @@ main{
 }
 
 .logo{
-  width: min(520px, 80vw);
+  width: min(680px, 92vw);
   height: auto;
   display:block;
-  margin: 0 auto 22px;
-  filter: drop-shadow(0 0 0 rgba(0,0,0,0)); /* keeps rendering crisp */
+  margin: 0 auto 32px;
 }
 
 .rule{
