@@ -139,6 +139,5 @@ footer .wrap{
   width: min(1100px, 120vw);
   margin: 40px auto 60px;
   display: block;
-  transform: translateX(-10px);
+  transform: translateX(-80px);
 }
-
