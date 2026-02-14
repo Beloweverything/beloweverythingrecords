@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Artists — Below Everything Records</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a href="index.html">About</a>
+        <a class="active" href="artists.html">Artists</a>
+        <a href="store.html">Store</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <img class="logo" src="logo.svg" alt="Below Everything Records logo" />
+    <div class="page-title">Artists</div>
+    <div class="rule"></div>
+
+    <div class="panel">
+      <p><strong>Roster</strong></p>
+      <p>— Coming soon.</p>
+
+      <p style="margin-top:16px;">
+        Tip: when you’re ready, we can list artists like an archive:
+        <br/>BER-001 • Artist • Title • Format • Year
+      </p>
+    </div>
+
+    <div class="rule"></div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>© <span id="y"></span> Below Everything Records</div>
+      <div>Artists / roster</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+</body>
+</html>
