@@ -135,3 +135,9 @@ footer .wrap{
   justify-content:space-between;
   align-items:center;
 }
+.hero-logo{
+  width: min(1100px, 120vw);
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
