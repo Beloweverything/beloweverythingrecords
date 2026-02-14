@@ -1,0 +1,138 @@
+:root{
+  --bg:#070707;
+  --fg:#f2f2f2;
+  --muted:#b8b8b8;
+  --line:#2a2a2a;
+  --max: 920px;
+  --pad: 20px;
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height:1.7;
+  letter-spacing: 0.01em;
+}
+
+/* Top nav */
+header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(7,7,7,0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.wrap{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 14px var(--pad);
+}
+nav{
+  display:flex;
+  justify-content:center;
+  gap: 22px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+nav a{
+  color: var(--fg);
+  text-decoration: none;
+  opacity: 0.85;
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+nav a:hover{
+  opacity: 1;
+  outline: 1px solid var(--line);
+  background: rgba(255,255,255,0.03);
+}
+nav a.active{
+  opacity: 1;
+  outline: 1px solid var(--fg);
+  background: rgba(255,255,255,0.04);
+}
+
+/* Layout */
+main{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 54px var(--pad) 84px;
+  text-align: center;
+}
+
+.logo{
+  width: min(520px, 80vw);
+  height: auto;
+  display:block;
+  margin: 0 auto 22px;
+  filter: drop-shadow(0 0 0 rgba(0,0,0,0)); /* keeps rendering crisp */
+}
+
+.rule{
+  width: min(560px, 88%);
+  height: 1px;
+  background: var(--line);
+  margin: 26px auto;
+}
+
+.kicker{
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+}
+
+.manifesto{
+  max-width: 62ch;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.manifesto p{
+  margin: 0 0 14px;
+}
+.manifesto .shout{
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Simple page blocks */
+.page-title{
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.panel{
+  max-width: 72ch;
+  margin: 0 auto;
+  text-align: left;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px;
+  background: rgba(255,255,255,0.03);
+}
+.panel a{ color: var(--fg); }
+
+/* Footer */
+footer{
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+}
+footer .wrap{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:space-between;
+  align-items:center;
+}
