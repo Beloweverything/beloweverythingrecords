@@ -141,3 +141,10 @@ footer .wrap{
   display: block;
   transform: translateX(-80px);
 }
+.with-art{
+  background-color: #070707;
+  background-image: url("identity.jpg");
+  background-repeat: no-repeat;
+  background-position: center 120px;
+  background-size: 700px auto;
+}
