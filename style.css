@@ -137,7 +137,8 @@ footer .wrap{
 }
 .hero-logo{
   width: min(1100px, 120vw);
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin: 40px auto 60px;
+  display: block;
+  transform: translateX(-10px);
 }
 
