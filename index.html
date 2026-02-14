@@ -5,75 +5,55 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Below Everything Records</title>
   <meta name="description" content="Below Everything Records — physical releases only." />
-  <style>
-    :root{--bg:#0b0b0b;--fg:#f2f2f2;--muted:#bdbdbd;--line:#2a2a2a;--max:920px}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
-    header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,11,11,.92);backdrop-filter:blur(8px);z-index:10}
-    .wrap{max-width:var(--max);margin:0 auto;padding:16px 20px}
-    nav{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
-    nav a{color:var(--fg);text-decoration:none;opacity:.92;padding:6px 8px;border-radius:10px}
-    nav a:hover{background:#141414;opacity:1}
-    main{max-width:var(--max);margin:0 auto;padding:48px 20px 72px;text-align:center}
-    h1{margin:0 0 18px;font-size:clamp(26px,3.2vw,40px);letter-spacing:.08em;text-transform:uppercase;font-weight:800}
-    .tagline{margin:0 auto 18px;max-width:44ch;color:var(--muted);font-size:16px}
-    .divider{margin:34px auto 26px;width:min(520px,85%);height:1px;background:var(--line)}
-    section{margin-top:56px;text-align:left;border:1px solid var(--line);border-radius:18px;padding:22px;background:#0f0f0f}
-    section h2{margin:0 0 10px;text-transform:uppercase;letter-spacing:.06em;font-size:14px;color:var(--muted)}
-    ul{margin:10px 0 0;padding-left:18px}
-    a.inline{color:var(--fg)}
-    footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-    footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center}
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header><div class="wrap">
-    <nav>
-      <a href="#about">About</a>
-      <a href="#artists">Artists</a>
-      <a href="#store">Store</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div></header>
+
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="active" href="index.html">About</a>
+        <a href="artists.html">Artists</a>
+        <a href="store.html">Store</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <main>
-    <h1>Below Everything, Above Nothing, No Standards</h1>
-    <p class="tagline">A record label focusing solely on physical releases.</p>
-    <div class="divider"></div>
+    <img class="logo" src="logo.svg" alt="Below Everything Records logo" />
 
-    <section id="about">
-      <h2>About</h2>
-      <p>Write a short label description here.</p>
-    </section>
+    <div class="kicker">EST. 2026</div>
 
-    <section id="artists">
-      <h2>Artists</h2>
-      <ul>
-        <li>Artist Name — genre / location</li>
-        <li>Artist Name — genre / location</li>
-      </ul>
-    </section>
+    <div class="rule"></div>
 
-    <section id="store">
-      <h2>Store</h2>
-      <p>Add your store link (Bandcamp etc.). Example:
-        <a class="inline" href="https://bandcamp.com" target="_blank" rel="noopener">Bandcamp</a>
-      </p>
-    </section>
+    <div class="manifesto">
+      <p class="shout">BELOW EVERYTHING, ABOVE NOTHING, NO STANDARDS</p>
 
-    <section id="contact">
-      <h2>Contact</h2>
+      <p>A record label focusing solely on physical releases.</p>
+
+      <p>Not all corners are round, not all edges are pointy.</p>
+
       <p>
-        Email: <a class="inline" href="mailto:hello@beloweverythingrecords.net">hello@beloweverythingrecords.net</a>
+        Imperfection, as in anti-perfection, and anti-perfection as an reflection
+        of this one considerable reality.
       </p>
-    </section>
+
+      <p>The thing that makes your brain bleed, is the thing below everything.</p>
+    </div>
+
+    <div class="rule"></div>
   </main>
 
-  <footer><div class="wrap">
-    <div>© <span id="y"></span> Below Everything Records</div>
-    <div>Hosted on GitHub Pages</div>
-  </div></footer>
+  <footer>
+    <div class="wrap">
+      <div>© <span id="y"></span> Below Everything Records</div>
+      <div>Physical releases only.</div>
+    </div>
+  </footer>
 
-  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
