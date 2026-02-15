@@ -146,3 +146,7 @@ footer .wrap{
   transform: translateX(-6px);
 }
 
+* {
+  box-sizing: border-box;
+}
+
