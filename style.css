@@ -150,3 +150,25 @@ footer .wrap{
   box-sizing: border-box;
 }
 
+.news {
+  max-width: 720px;
+  margin: 60px auto;
+  padding: 0 16px;
+  line-height: 1.6;
+}
+
+.news-entry {
+  margin-bottom: 60px;
+}
+
+.news-date {
+  color: #ED1C24; /* your logo red */
+  font-size: 14px;
+  margin-bottom: 10px;
+  letter-spacing: 0.06em;
+}
+
+.news-text {
+  font-size: 16px;
+}
+
