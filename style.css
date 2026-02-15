@@ -139,7 +139,7 @@ footer .wrap{
   align-items:center;
 }
 .hero-logo{
-  width: min(1100px, 100vw);
+  width: min(1100px, 100%);
   margin: 40px auto 60px;
   display: block;
     margin-inline: auto;
