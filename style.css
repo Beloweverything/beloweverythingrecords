@@ -175,3 +175,30 @@ footer .wrap{
 .site-nav a.active {
   color: #ED1C24; /* your red */
 }
+
+.artists {
+  max-width: 720px;
+  margin: 80px auto;
+  padding: 0 16px;
+}
+
+.artist {
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.artist-name {
+  letter-spacing: 0.12em;
+  margin-bottom: 40px;
+}
+
+.artist-logo img {
+  max-width: 280px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.artist-bio {
+  line-height: 1.7;
+  font-size: 16px;
+}
