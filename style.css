@@ -202,3 +202,10 @@ footer .wrap{
   line-height: 1.7;
   font-size: 16px;
 }
+
+.artist-photo img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin: 40px 0;
+}
